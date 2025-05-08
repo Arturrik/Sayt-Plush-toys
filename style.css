@@ -1,0 +1,250 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: hwb(212 34% 24%);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px hsla(0, 0%, 100%, 0.986);
+}
+
+h1 {
+    margin: 0;
+    color: white;
+} 
+
+.header_buttons {
+    display: flex;
+    gap: 20px;
+    
+}
+.header_button {
+    width: 104px;
+    align-items: flex;
+    padding: 15px 20px;
+    border-radius: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.product {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.product p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.price {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.buy-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition:0.3s ease;
+    margin:7px;
+}
+
+.buy-button:hover {
+    background-color: #0056b3;
+}
+
+
+.popup {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 300px;
+}
+
+.close-button {
+    background-color: hwb(212 34% 24%);
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: hwb(212 34% 24%);
+    color: white;
+    
+}
+.delivery-button {
+    padding: 10px 20px;
+    background-color: hwb(212 34% 24%); 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    font-weight: bold; 
+    transition: 0.3s ease; 
+    margin-bottom: 10px;     
+    width: 100%;             
+    box-sizing: border-box;
+}
+.delivery-button:hover {
+    background-color: lab(54.22% -46.63 33.69); 
+}
+.delivery-button:focus {
+    outline: none; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); 
+}
+.header_button {
+    padding: 10px 20px;
+    background-color: hwb(212 34% 24%); 
+    color: white;
+    border: none; 
+    border-radius: 6px; 
+    cursor: pointer;
+    font-size: 16px; 
+    font-weight: bold; 
+    transition: 0.3s ease;
+}
+
+.header_button:hover {
+    background-color: lab(54.22% -46.63 33.69); 
+    border-radius: 1px;
+    border-color: lab(88.4% -2.04 0.38);
+    
+}
+.header_button:focus {
+    outline: none; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); 
+}
+.header_buttons {
+    float: right;  
+    position: absolute;
+    top: 40px;      
+    right: 40px;   
+    border: 2px solid lab(88.4% -2.04 0.38);;
+    transition: 0.3s ease;
+    border-radius: 5px;
+}
+header::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.nav_flex{
+    padding: 10px 20px;
+    background-color: hwb(212 34% 24%); 
+    color: white;
+    border: none; 
+    border-radius: 6px; 
+    cursor: pointer;
+    font-size: 16px; 
+    font-weight: bold; 
+    transition: 0.3s ease;
+    display: flex;
+    align-items: flex;
+    
+}
+.nav_flex:hover {
+    background-color: lab(54.22% -46.63 33.69); 
+    border-color: lab(88.4% -2.04 0.38);
+    padding: 10px 20px;
+}
+.nav_flex:focus {
+    outline: none; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); 
+}
+.nav_flex {
+    margin-right: 10px;
+    margin-top: 20px;
+    float: left;  
+    position: flex;
+    top: 30px;      
+    right: 20px;  
+    border: 2px solid lab(88.4% -2.04 0.38);;
+    transition: 0.3s ease;
+    border-radius: 5px;
+}
+.nav_flex::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+h1{
+    display: center;
+    margin-right: 380px;
+}
+p {
+    text-decoration: none;
+    margin: 10px;
+    color: white;
+    margin-right: 385px;
+}
+a {
+    text-decoration: none; 
+}
+.close-button  {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition:0.3s ease;
+}
+.close-button:hover {
+    background-color: #0056b3;
+}
